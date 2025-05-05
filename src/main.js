@@ -2,11 +2,9 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
-
-import 'vuefinder/dist/style.css'
-import VueFinder from 'vuefinder/dist/vuefinder'
+import router from './router';
 
 const app = createApp(App)
-app.use(VueFinder)
+app.use(router);
 
-createApp(App).mount('#app')
+app.mount('#app')
